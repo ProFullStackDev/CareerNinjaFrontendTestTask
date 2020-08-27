@@ -1,0 +1,124 @@
+.search-result-hints {
+    background: white;
+    display: flex;
+    border: 1px solid;
+    background: white;
+    z-index: 1;
+    position: absolute;
+    width: 88%;
+    border-radius: 0.6rem;
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-top: 1rem;
+            color: #474747 !important;
+            cursor: pointer;
+            width: 100%;
+
+            &:hover {
+                color: #858585 !important;
+            }
+
+            svg {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+.search-container{
+   
+    display: flex;
+    justify-content: center;
+}
+.search-box{
+    margin-top: 20px;
+    display: flex;
+    width: 70%;
+}
+.search-bar{
+    width:350px
+}
+.search-input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.search-mobile{
+    display: none;
+}
+.filter-button{
+    display: flex;
+}
+.search-result{
+    position: absolute;
+       display: flex;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    top: 61px;
+    border-radius: 6px;
+}
+#use-autocomplete-demo{
+        // box-shadow: none;
+        // outline:none;
+        border-radius: 0px;
+}
+
+  ul.options {
+    display: flex;
+    flex: auto;
+    background: white;
+    z-index: 1; 
+    padding-left: 0px;
+    flex-direction: column;
+    list-style: none;
+    color:black;
+    transition: width 0.3s;
+    margin: auto;
+    border: 1px solid gainsboro;    
+    position: relative;
+  }
+  
+  ul.options li {
+    display: flex;
+    width: 100%;
+    border-radius: 2px;
+    text-align: left;
+  }
+  ul.options li:hover {
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  
+  ul.options li.option-active {
+    background: whitesmoke;
+    color: #00b4cc;
+    text-align: left;
+  }
+  .no-options {
+      margin-top: 10px;
+    color: black;
+}
+  
+
+@media only screen and (max-width:998px){
+    .search-box{
+        min-width: 100%;
+    }
+}
+@media only screen and (max-width:768px){
+    .search-bar{
+        width:100%;
+    }
+    .search-box{
+        min-width: 100%;
+        flex-direction: column;
+    }
+    .MuiAutocomplete-root .MuiAutocomplete-hasClearIcon .MuiAutocomplete-hasPopupIcon{
+        width:100% !important;
+    }
+  
+}
